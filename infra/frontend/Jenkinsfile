@@ -70,7 +70,7 @@ terraform {
     key            = "frontend/dev/terraform-v3.tfstate"
     region         = "eu-north-1"
     encrypt        = true
-    dynamodb_table = "terraform-state-lock"
+    dynamodb_table = "terraform-state-lock-41"
     use_lockfile   = true
   }
 }
