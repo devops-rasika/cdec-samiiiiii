@@ -92,7 +92,7 @@ pipeline {
                     
                     sh """
                         # Login to ECR
-                        aws ecr get-login-password --region eu-north-1 | sudo docker login --username AWS --password-stdin ${DOCKER_REGISTRY}
+                        aws ecr get-login-password --region eu-north-1 | docker login --username AWS --password-stdin ${DOCKER_REGISTRY}
                         
                         cd app/backend/auth-service
                         sudo docker build -t ${fullImageName} .
@@ -112,7 +112,7 @@ pipeline {
                 echo 'Pushing Docker image to ECR registry...'
                 sh """
                     # Login to ECR
-                    aws ecr get-login-password --region eu-north-1 | sudo docker login --username AWS --password-stdin ${DOCKER_REGISTRY}
+                    aws ecr get-login-password --region eu-north-1 | docker login --username AWS --password-stdin ${DOCKER_REGISTRY}
                     
                     # Push images to ECR
                     sudo docker push ${DOCKER_IMAGE}
