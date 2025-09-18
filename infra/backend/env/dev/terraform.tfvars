@@ -1,6 +1,6 @@
 # Backend Infrastructure - Development Environment Configuration
 
-aws_region = "eu-west-1"
+aws_region = "eu-north-1"
 vpc_name   = "backend-dev-vpc"
 vpc_cidr   = "10.2.0.0/16"
 
