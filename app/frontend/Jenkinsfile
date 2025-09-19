@@ -53,9 +53,9 @@ pipeline {
                 dir('app/frontend') {
                     sh '''
                         # Set environment variables for the build
-                        export VITE_AUTH_API="https://api.classproject.com/api/auth"
-                        export VITE_COURSE_API="https://api.classproject.com/api/courses"
-                        export VITE_ENROLL_API="https://api.classproject.com/api/enroll"
+                        export VITE_AUTH_API="https://api.classproject.shop/api/auth"
+                        export VITE_COURSE_API="https://api.classproject.shop/api/courses"
+                        export VITE_ENROLL_API="https://api.classproject.shop/api/enroll"
                         
                         # Build the application
                         npm run build
