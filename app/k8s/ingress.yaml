@@ -18,7 +18,7 @@ metadata:
 spec:
   ingressClassName: alb
   rules:
-  - host: api.classprojectcom
+  - host: api.classproject.shop
     http:
       paths:
       - path: /api/auth
