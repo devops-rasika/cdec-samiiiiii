@@ -118,9 +118,9 @@ pipeline {
                     
                     
                     # Push images to ECR
-                    sudo docker push ${DOCKER_IMAGE}
-                    sudo docker push ${DOCKER_REGISTRY}/${IMAGE_NAME}:latest
-                    sudo docker rmi ${DOCKER_REGISTRY}/${IMAGE_NAME}:latest
+                    docker push ${DOCKER_IMAGE}
+                    docker push ${DOCKER_REGISTRY}/${IMAGE_NAME}:latest
+                    docker rmi ${DOCKER_REGISTRY}/${IMAGE_NAME}:latest
                 """
             }
         }
