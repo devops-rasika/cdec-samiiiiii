@@ -3,7 +3,7 @@
 aws_region = "eu-west-2"
 
 # S3 Configuration
-s3_bucket_name     = "aptupdate-dev-frontend"
+s3_bucket_name     = "aptupdate-dev-frontend-0009"
 s3_enable_versioning = true
 
 # CloudFront Configuration
