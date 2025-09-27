@@ -3,7 +3,7 @@
 aws_region = "us-east-1"  # Try us-east-1 which has better CloudFront support
 
 # S3 Configuration
-s3_bucket_name     = "aptupdate-dev-frontend-00091"
+s3_bucket_name     = "lenovo-frontend-dev-20241227-001"
 s3_enable_versioning = true
 
 # CloudFront Configuration
