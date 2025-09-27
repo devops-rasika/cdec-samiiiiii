@@ -1,14 +1,14 @@
 # Frontend Infrastructure - Development Environment Configuration
 
-aws_region = "eu-north-1"
+aws_region = "eu-west-2"
 
 # S3 Configuration
-s3_bucket_name     = "class-project-dev-frontend"
+s3_bucket_name     = "aptupdate-dev-frontend"
 s3_enable_versioning = true
 
 # CloudFront Configuration
 enable_cloudfront           = true   # CloudFront enabled
-cloudfront_distribution_name = "frontend-dev-distribution-v2"
+cloudfront_distribution_name = "frontend-dev-distribution-v3"
 cloudfront_comment          = "CloudFront distribution for frontend dev environment"
 cloudfront_price_class      = "PriceClass_100"  # Use PriceClass_All for production
 
