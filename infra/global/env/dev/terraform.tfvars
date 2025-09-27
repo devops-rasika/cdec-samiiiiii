@@ -1,9 +1,9 @@
 # Global Infrastructure - Development Environment Configuration
 
-aws_region = "eu-north-1"
+aws_region = "eu-west-2"
 
 # Domain Configuration
-domain_name = "classproject.shop"  # Replace with your actual domain
+domain_name = "aptupdate.store"  # Replace with your actual domain
 create_hosted_zone = true
 
 # CloudFront Configuration
