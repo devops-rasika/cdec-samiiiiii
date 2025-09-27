@@ -39,7 +39,7 @@ module "cloudfront" {
   count  = var.enable_cloudfront ? 1 : 0
   source = "../../../modules/cloudfront"
 
-  distribution_name                    = var.cloudfront_distribution_name
+  distribution_name                   = var.cloudfront_distribution_name
   s3_bucket_name                      = module.s3.bucket_id
   s3_bucket_regional_domain_name      = module.s3.bucket_regional_domain_name
   comment                             = var.cloudfront_comment
