@@ -30,10 +30,10 @@ pipeline {
     // Environment variables available throughout the pipeline
     environment {
         TF_VAR_environment = "${params.ENVIRONMENT}"
-        AWS_DEFAULT_REGION = 'eu-north-1'
-        TF_STATE_BUCKET = 'terraform-state-bucket-cdec41-project'
+        AWS_DEFAULT_REGION = 'us-east-1'
+        TF_STATE_BUCKET = 'tfbucket1233333'
         TF_STATE_KEY = 'backend/${params.ENVIRONMENT}/terraform-v2.tfstate'
-        TF_STATE_REGION = 'eu-north-1'
+        TF_STATE_REGION = 'us-east-1'
     }
     
     // Main pipeline stages
@@ -65,11 +65,11 @@ pipeline {
                             cat > backend.tf << 'EOF'
 terraform {
   backend "s3" {
-    bucket         = "terraform-state-bucket-cdec41-project"
+    bucket         = "tfbucket1233333"
     key            = "backend/dev/terraform-v2.tfstate"
-    region         = "eu-north-1"
+    region         = "us-east-1"
     encrypt        = true
-    dynamodb_table = "terraform-state-lock-41"
+    dynamodb_table = "terraform-state-lock"
     use_lockfile   = true
   }
 }
